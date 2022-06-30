@@ -1,0 +1,71 @@
+@import  "reset.css";
+ /* @import url('../layout.css'); */
+@import "content.css";
+@import "responsive.css";
+
+ /* @import "adaptive.css";
+ @import "animation.css"; */
+ /* @font-face {
+       font-family: "HeliosExtBlackC.ttf";
+       src: url("fonts/HeliosExtBlackC.ttf") format('ttf');
+       font-weight: normal;
+       font-style: normal;
+
+     }
+
+
+
+ @font-face {
+ font-family: 'HeliosExtLightC';
+ src: url('fonts/HeliosExtLightC.ttf') format('ttf');
+ font-weight: normal;
+ font-style: normal;
+ }
+
+ @font-face {
+ font-family: 'HeliosExtLightC';
+ src: url('/../fonts/HeliosExtLightC-Italic.ttf') format('ttf');
+ font-weight: normal;
+ font-style: italic;
+ }
+
+ @font-face {
+ font-family: 'HeliosExtC';
+ src: url('/../fonts/HeliosExtC.ttf') format('ttf');
+ font-weight: normal;
+ font-style: normal;
+ }
+ @font-face {
+ font-family: 'HeliosExtC';
+ src: url('/../fonts/HeliosExtC-Bold.ttf') format('ttf');
+ font-weight: bold;
+ font-style: normal;
+ }
+ @font-face {
+ font-family: 'HeliosExtC';
+ src: url('../fonts/HeliosExtC-Italic.ttf') format('ttf');
+ font-weight: normal;
+ font-style: italic;
+ }
+
+ @font-face {
+ font-family: 'HeliosExtC';
+ src: url('../fonts/HeliosExtC-BoldItalic.ttf') format('ttf');
+ font-weight: bold;
+ font-style: italic;
+ }
+
+
+ @font-face {
+ font-family: 'HeliosExtBlackC';
+ src: url('../fonts/HeliosExtBlackC.ttf') format('ttf');
+ font-weight: normal;
+ font-style: normal;
+ }
+
+ @font-face {
+ font-family: 'HeliosExtBlackC';
+ src: url('../fonts/HeliosExtBlackC-Italic.ttf') format('ttf');
+ font-weight: normal;
+ font-style: italic;
+ } */

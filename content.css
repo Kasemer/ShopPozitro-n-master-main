@@ -1,0 +1,400 @@
+* { margin: 0; padding: 0; }
+
+@font-face {
+  font-family: "HeliosExtBlackC";
+  src: url("fonts/HeliosExtBlackC.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HeliosExtLightC";
+  src: url("fonts/HeliosExtLightC.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* Теперь можно использовать шрифт */
+/* body {
+  font-family: "HeliosExtC", "Arial", normal;
+}
+
+
+
+@font-face {
+font-family:'HeliosExtLightC';
+src: local("HeliosExtLightC"),
+  local("HeliosExtLightC"),
+  url("HeliosExtLightC.ttf");
+font-weight: bold;
+}
+@font-face {
+font-family: 'HeliosExtLightC';
+src: url('../fonts/HeliosExtLightC-Italic.ttf') format('ttf');
+font-weight: normal;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'HeliosExtC';
+src: url('../fonts/HeliosExtC.ttf') format('ttf');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'HeliosExtC';
+src: url('../fonts/HeliosExtC-Bold.ttf') format('ttf');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'HeliosExtC';
+src: url('../fonts/HeliosExtC-Italic.ttf') format('ttf');
+font-weight: normal;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'HeliosExtC';
+src: url('../fonts/HeliosExtC-BoldItalic.ttf') format('ttf');
+font-weight: bold;
+font-style: italic;
+}
+
+@font-face {
+      font-family: "HeliosExtBlackC.ttf";
+      src: url("fonts/HeliosExtBlackC.ttf") format('ttf');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+
+@font-face {
+font-family: 'HeliosExtBlackC';
+src: url('../fonts/HeliosExtBlackC.ttf') format('ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'HeliosExtBlackC';
+src: url('../fonts/HeliosExtBlackC-Italic.ttf') format('ttf');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+        font-family: "HeliosExtBlackC";
+        src: url("../fonts/HeliosExtBlackC-Italic.woff2") format("woff2"),
+        url("../fonts/HeliosExtBlackC-Italic.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        }
+ */
+
+/*
+ @font-face {
+ font-family: 'HeliosExtBlackC';
+ src: url('../fonts/HeliosExtLightC.ttf') format('ttf');
+ font-weight: normal;
+ font-style: normal;
+ }
+ @font-face {
+   font-family: "HeliosExtBlackC";
+   font-style: normal;
+   font-weight: 400;
+   /* Браузер сначала попробует найти шрифт локально */
+   /* src: local("HeliosExtBlackC.ttf"),
+        /* Если не получилось, загрузит woff2 */
+        /* url("fonts/HeliosExtBlackC.woff2") format("woff2"),
+        /* Если браузер не поддерживает woff2, загрузит woff */
+        /* url("fonts/HeliosExtBlackC.woff") format("woff");
+ } */
+
+
+
+ /* @font-face {
+   font-family: "HeliosExtBlackC";
+   src: url("HeliosExtBlackC.ttf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
+ }
+ @font-face {
+   font-family: "HeliosExtBlackC";
+   src: url("HeliosExtBlackC.ttf") format("truetype");
+   font-style: Bold;
+   font-weight: bold;
+ } */
+
+body {
+  overflow: hidden;
+  font-family: "HeliosExtLightC";
+}
+
+.one, .two, .three, .four, .five, .name {
+  cursor: pointer;
+}
+
+.wrapper {
+
+  /* border: 1px solid black; */
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 50% 50% ;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.one {
+overflow: hidden;
+position: relative;
+/* background-color: red; */
+  border: 1px solid black;
+  grid-column-start: 1;
+   grid-column-end: 2;
+justify-content: center;
+   align-items: center;
+   line-height: 145px;
+   /* margin: 0; */
+
+
+}
+
+.tt1 {
+  font-family: "HeliosExtLightC";
+  font-weight: 200;
+  font-size: 5vw;
+  z-index: 1;
+  margin-left: 3vw;
+  position: absolute;
+}
+
+.back1 {
+  opacity: 0;
+  transition: 0.5s opacity;
+  position: relative;
+  top: 15%;
+  width: 27vw;
+  height: 90px;
+  margin-left: 3vw;
+  background: #F0FF41;
+  filter: blur(30px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+
+.one:hover .back1{
+  opacity: 1;
+}
+
+
+.two {
+
+  /* background-color: lime; */
+  border: 1px solid black;
+    grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+      grid-row-end: 3;
+      line-height: 145px;
+
+}
+
+.tt2 {
+  font-family: "HeliosExtLightC";
+  font-weight: 300;
+  font-size: 5vw;
+  z-index: 1;
+  margin-left: 3vw;
+  position: absolute;
+}
+
+.back2 {
+  opacity: 0;
+  transition: 0.5s opacity;
+  position: relative;
+  /* align-self: auto; */
+ top: 15%;
+  width: 27vw;
+  height: 90px;
+    margin-left: 3vw;
+    background: #41FFF4;
+    filter: blur(30px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.two:hover .back2{
+  opacity: 1;
+}
+
+
+
+
+.three {
+    /* background-color: pink; */
+  border: 1px solid black;
+
+
+    grid-column-start: 1;
+     grid-column-end: 2;
+
+     line-height: 145px;
+
+}
+
+
+.tt3 {
+  font-family: "HeliosExtLightC";
+  font-weight: 300;
+  font-size: 5vw;
+  z-index: 1;
+  margin-left: 6vw;
+  position: absolute;
+
+
+}
+
+.back3 {
+  opacity: 0;
+  transition: 0.5s opacity;
+  position: relative;
+  /* align-self: auto; */
+ top: 15%;
+  width: 40vw;
+  height: 90px;
+    margin-left: 3vw;
+    background: violet;
+    filter: blur(30px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.three:hover .back3{
+  opacity: 1;
+}
+
+
+.four {
+    /* background-color: violet; */
+  border: 1px solid black;
+    grid-column-start: 1;
+     grid-column-end: 2;
+     line-height: 145px;
+}
+
+
+.tt4 {
+  font-family: "HeliosExtLightC";
+  font-weight: 300;
+  font-size: 5vw;
+  z-index: 1;
+  margin-left: 3vw;
+  position: absolute;
+}
+
+.back4 {
+  opacity: 0;
+  transition: 0.5s opacity;
+  position: relative;
+  /* align-self: auto; */
+ top: 15%;
+  width: 35vw;
+  height: 90px;
+    margin-left: 3vw;
+    background: #FFA841;
+    filter: blur(30px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.four:hover .back4{
+  opacity: 1;
+}
+
+
+.five {
+  /* background-color: blue; */
+  border: 1px solid black;
+  font-weight: 300;
+  font-size: 6vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  line-height: 145px;
+}
+
+.tt5 {
+  font-family: "HeliosExtLightC";
+  font-weight: 300;
+  font-size: 5vw;
+  z-index: 1;
+  margin-left: 3vw;
+  position: absolute;
+}
+
+.back5 {
+  opacity: 0;
+  transition: 0.5s opacity;
+  position: relative;
+  /* align-self: auto; */
+ top: 15%;
+  width: 27vw;
+  height: 90px;
+    margin-left: 5vw;
+    background: #41A4FF;
+    filter: blur(30px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.five:hover .back5{
+  opacity: 1;
+}
+
+
+.name {
+  /* background-color: blue; */
+  border: 1px solid black;
+  font-family: "HeliosExtLightC";
+  font-weight: 300;
+  font-size: 6vw;
+  grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row-start: 1;
+    grid-row-end: 2;
+    font-weight: 300;
+    font-size: 6vw;
+    text-align: center;
+    margin-left: 10px;
+    margin: 0;
+    line-height: 145px;
+
+
+}
+
+.six {
+  position: relative;
+  border: 1px solid black;
+
+  grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row-start: 2;
+    grid-row-end: 6;
+    display: flex;
+  align-items: center;
+  justify-content: center
+    /* align-content: center; */
+}
+
+
+
+.home_img {
+
+  position: relative;
+  /* position: relative;
+  margin-left: 50%;
+  margin-top: 10%; */
+
+  /* display: inline-block;
+  vertical-align: middle; */
+
+  /* display: block;
+  margin: auto; */
+  /* height: 36vw; */
+  height: 90%;
+
+}
